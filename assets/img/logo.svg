@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" color="#7D4A6E" fill="none">
+  <title>Elowa — official mark: profile wipe + glow sparkle</title>
+  <path d="M48 12 A36 36 0 0 0 48 84
+           C45 81 43 78 40.5 71 C39 68 39 66 40 63.5 C42.5 62 43 59 39.5 57.5
+           C41 56 42 54 39 52 C35 52 33 50 34 48 C37 43 41 38 43 33 C42 27 43 20 48 12 Z" fill="currentColor"/>
+  <path d="M48 12 A36 36 0 0 1 48 84" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
+  <path d="M79 5 C80.5 10.5 82 12 87.5 13.5 C82 15 80.5 16.5 79 22 C77.5 16.5 76 15 70.5 13.5 C76 12 77.5 10.5 79 5 Z" fill="currentColor"/>
+</svg>
