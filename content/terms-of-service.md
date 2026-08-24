@@ -14,12 +14,9 @@ Elowa is a personal tracking tool, not a medical device or clinical instrument. 
 
 Elowa does not diagnose, treat, cure, or prevent any disease or skin condition, and nothing in the App constitutes medical or dermatological advice. Elowa's comparisons are visual aids based on photos you take yourself with a phone camera.
 
-The App performs two kinds of image processing, both entirely on your device:
+To guide your framing, angle, and lighting, and to align your photos with each other if you ask it to, the App performs limited image and sensor processing entirely on your device. This processing does not identify you: it does not create, collect, or store a faceprint, facial template, or any other biometric identifier. Nothing from it is transmitted to us or to any third party, and nothing from it is retained apart from the photo you choose to keep. What the App measures, and what it does with each measurement, is described in Section 1.5 of our Privacy Policy.
 
-- **While the camera is open**, Elowa reads the live camera preview to estimate overall brightness and colour temperature, and reads your phone's motion sensors to estimate the angle you are holding it at. This is how the App tells you that the light or the angle has shifted since your last check-in. It runs on every check-in, it is not optional, and it measures the scene rather than your skin. Nothing from it is transmitted, and the preview frames it reads are not saved.
-- **After a photo is taken**, if you have switched on the reframing assist ("Line your photos up" in Settings), Elowa detects the position of your face in the photo and adjusts the crop so that your face appears at a consistent size and position. This feature is off unless you turn it on, and is currently offered as a beta feature. With it off, each photo is cropped to a fixed frame and its contents are otherwise saved as taken.
-
-The reframing assist improves consistency of framing, but it does not correct for or standardize lighting, color, distance, or other conditions against any fixed reference. As a result, Elowa's outputs are not calibrated, clinical-grade measurements, and lighting, angle, camera hardware, and skin tone can all still affect the accuracy of the photo comparisons shown to you, whether or not the assist is enabled. Elowa does not transmit your check-in photos to us or to any third party as part of normal operation.
+The reframing assist ("Line your photos up" in Settings) is off unless you turn it on, and is currently offered as a beta feature. Whether it is on or off, Elowa does not correct for or standardize lighting, colour, distance, or other conditions against any fixed reference. Elowa's outputs are therefore not calibrated, clinical-grade measurements, and lighting, angle, camera hardware, and skin tone can all affect the accuracy of the photo comparisons shown to you. Elowa does not transmit your check-in photos to us or to any third party as part of normal operation.
 
 If you have a concern about your skin, a mole, a lesion, or any other health matter, consult a licensed dermatologist or physician. Do not rely on Elowa as a substitute for professional medical evaluation.
 
@@ -43,7 +40,7 @@ Because photo comparison is central to Elowa's value, we've designed the App to 
 
 ## 5A. Usage Measurement
 
-With your agreement, given through the notice shown when you set up your account, Elowa collects limited technical and usage data — which parts of the App you use, how long core actions take, and where the App fails. It never includes your photos, your notes, or your concern selections. You can turn this off at any time in Settings, and the App works identically either way. What is collected, why, and how long it is kept is set out in our Privacy Policy, which governs in the event of any inconsistency with this section.
+Elowa collects limited technical and usage data — which parts of the App you use, how long core actions take, and where the App fails — but only if you agree to it. You are asked for this separately from every other choice at setup, it is off unless you turn it on, and declining it has no effect on your access to the App or on any other part of your account. It never includes your photos, your notes, or your concern selections. You can turn it on or off at any time in Settings, and the App works identically either way. What is collected, why, and how long it is kept is set out in our Privacy Policy, which governs in the event of any inconsistency with this section.
 
 ## 6. Acceptable Use
 
@@ -57,9 +54,13 @@ The App, including its design, code, guidance system, and branding, is owned by 
 
 Elowa is provided "as is" and "as available," without warranties of any kind, express or implied, including implied warranties of merchantability, fitness for a particular purpose, and non-infringement. We do not warrant that the App will be uninterrupted, error-free, or that photo comparisons will be accurate in every case. You use Elowa's comparisons and guidance at your own discretion and risk.
 
+Some jurisdictions do not allow the exclusion of implied warranties or of certain statutory consumer guarantees. Where that is the case, the exclusions above apply only to the extent permitted by law, and nothing in these Terms removes or limits any non-waivable right you have under the consumer protection law of your country, province, or state.
+
 ## 9. Limitation of Liability
 
-To the maximum extent permitted by law, we will not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of data, arising out of or related to your use of the App, including any loss of photos due to device failure, deletion, or issues with a third-party cloud backup you enabled. Our total liability for any claim arising out of these Terms or the App will not exceed the amount you paid us, if any, in the twelve months preceding the claim.
+To the maximum extent permitted by law, we will not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of data, arising out of or related to your use of the App, including any loss of photos due to device failure, deletion, or issues with a third-party cloud backup you enabled. Our total liability for any claim arising out of these Terms or the App will not exceed the greater of (a) the amount you paid us, if any, in the twelve months preceding the claim, or (b) CAD $100.
+
+Nothing in these Terms excludes or limits our liability for death or personal injury caused by our negligence; for fraud or fraudulent misrepresentation; for gross negligence or wilful misconduct; or for any other liability that cannot lawfully be excluded or limited. Some jurisdictions do not allow the exclusion or limitation of incidental or consequential damages, so parts of this section may not apply to you.
 
 ## 10. Indemnification
 
