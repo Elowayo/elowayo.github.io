@@ -481,3 +481,6 @@ section { padding: clamp(2.75rem, 7vw, 5rem) 0; }
   border-radius: 0 var(--radius) var(--radius) 0;
 }
 .doc blockquote p { margin: 0; }
+
+/* Korean: break lines between words, not inside them. */
+:lang(ko) { word-break: keep-all; overflow-wrap: break-word; }

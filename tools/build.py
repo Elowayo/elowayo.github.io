@@ -40,7 +40,7 @@ HOME_EN = '''<div class="hero">
   <div class="wrap">
     <p class="eyebrow">Coming soon</p>
     <h1>Is my skin actually improving?</h1>
-    <p class="lede">Elowa answers that with a two-minute daily photo check-in — three guided poses,
+    <p class="lede">Elowa answers that with a one-minute daily photo check-in — three guided poses,
       an honest before-and-after comparison, and photos that stay on your phone.</p>
     <div class="actions">
       <a class="btn btn-primary" href="mailto:hello.elowa@gmail.com?subject=Elowa">Get in touch</a>
@@ -65,7 +65,7 @@ HOME_EN = '''<div class="hero">
       <div class="card">
         <span class="step">2</span>
         <h3>Three poses</h3>
-        <p>Front, left, right. It takes about two minutes. Add a note if the day is worth remembering —
+        <p>Front, left, right. It takes about a minute. Add a note if the day is worth remembering —
           a new product, a flare-up, a bad night's sleep.</p>
       </div>
       <div class="card">
@@ -120,9 +120,9 @@ HOME_EN = '''<div class="hero">
 HOME_KO = '''<div class="hero">
   <div class="wrap">
     <p class="eyebrow">출시 예정</p>
-    <h1>내 피부, 정말 좋아지고 있을까?</h1>
-    <p class="lede">Elowa는 하루 2분 사진 체크인으로 그 답을 찾아 줍니다. 안내에 맞춰 세 방향을 찍고,
-      전후를 있는 그대로 비교합니다. 사진은 휴대폰 밖으로 나가지 않습니다.</p>
+    <h1>피부가 좋아졌는지,<br> 느낌 말고 사진으로 확인하세요</h1>
+    <p class="lede">하루 1분이면 됩니다. 안내에 맞춰 세 방향을 찍으면 Elowa가 전후를 있는 그대로
+      비교해 줍니다. 사진은 휴대폰 밖으로 나가지 않습니다.</p>
     <div class="actions">
       <a class="btn btn-primary" href="mailto:hello.elowa@gmail.com?subject=Elowa">문의하기</a>
       <a class="btn btn-outline" href="privacy.html">내 정보는 어떻게 처리되나요</a>
@@ -144,7 +144,7 @@ HOME_KO = '''<div class="hero">
       <div class="card">
         <span class="step">2</span>
         <h3>세 방향 촬영</h3>
-        <p>정면, 왼쪽, 오른쪽. 2분 정도면 끝납니다. 새 제품을 쓰기 시작했거나, 트러블이 올라왔거나,
+        <p>정면, 왼쪽, 오른쪽. 1분이면 끝납니다. 새 제품을 쓰기 시작했거나, 트러블이 올라왔거나,
           잠을 설친 날이라면 메모를 남겨 두세요.</p>
       </div>
       <div class="card">
@@ -208,7 +208,7 @@ LANGS = {
         "updated": "Last updated {}",
         "home": {
             "title": "Elowa — see whether your skin is actually changing",
-            "desc": "Elowa is a two-minute daily photo check-in that shows whether your skin is actually changing. Three guided poses, honest comparison, photos that never leave your phone.",
+            "desc": "Elowa is a one-minute daily photo check-in that shows whether your skin is actually changing. Three guided poses, honest comparison, photos that never leave your phone.",
             "body": HOME_EN,
         },
         "privacy": {
@@ -237,8 +237,8 @@ LANGS = {
         "on_this_page": "목차",
         "updated": "최종 수정일 {}",
         "home": {
-            "title": "Elowa — 내 피부가 정말 달라지고 있는지 확인하세요",
-            "desc": "Elowa는 하루 2분 사진 체크인으로 피부가 정말 달라지고 있는지 보여 주는 앱입니다. 안내에 맞춘 세 방향 촬영, 있는 그대로의 비교, 휴대폰 밖으로 나가지 않는 사진.",
+            "title": "Elowa — 피부 변화를 사진으로 확인하세요",
+            "desc": "하루 1분 사진 체크인으로 피부 변화를 있는 그대로 보여 주는 앱, Elowa. 안내에 맞춰 세 방향을 찍고 전후를 비교합니다. 사진은 휴대폰에만 남습니다.",
             "body": HOME_KO,
         },
         "privacy": {
