@@ -407,3 +407,37 @@ section { padding: clamp(2.75rem, 7vw, 5rem) 0; }
   .brand { font-size: 1.2rem; }
   .actions .btn { width: 100%; }
 }
+
+/* ---------- language switcher ---------- */
+
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+}
+.lang-switch a { color: var(--on-surface-variant); text-decoration: none; padding: 0.35rem 0; }
+.lang-switch a:hover { color: var(--primary); text-decoration: underline; }
+.lang-switch [aria-current] { color: var(--on-primary-container); font-weight: 600; }
+.lang-switch .sep { color: var(--outline); }
+
+/* ---------- tables and quotes in documents ---------- */
+
+.doc .table-wrap { overflow-x: auto; margin: 0 0 1.15rem; }
+.doc table { border-collapse: collapse; width: 100%; font-size: 0.92rem; }
+.doc th, .doc td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.55rem 0.7rem;
+  border-bottom: 1px solid var(--outline-variant);
+}
+.doc th { color: var(--on-surface); font-weight: 600; background: var(--surface-container-low); }
+.doc blockquote {
+  margin: 0 0 1.5rem;
+  padding: 0.9rem 1.1rem;
+  border-left: 3px solid var(--primary);
+  background: var(--secondary-container);
+  color: var(--on-secondary-container);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+.doc blockquote p { margin: 0; }
