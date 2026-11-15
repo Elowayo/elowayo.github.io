@@ -366,6 +366,10 @@ def shell(lang, langs, page, title, desc, body):
 def clean(md):
     # HTML comments hold internal drafting notes (the Korean drafts open with one).
     md = re.sub(r"<!--.*?-->", "", md, flags=re.S).lstrip()
+    # The "초안 — 게시 전" (draft, not in effect) notice the Korean drafts carry
+    # for reviewers. A page is only built once its language is published, so
+    # the notice is never true on the site.
+    md = re.sub(r"^>\s*\*\*초안[^\n]*\n(?:>[^\n]*\n)*\n*", "", md, flags=re.M)
     # Internal drafting commentary that must not appear on a live site:
     # the "not reviewed by an attorney" footnote and the BC-counsel aside in Terms §13.
     md = re.sub(r"\n---\s*\n+\*This document is a starting draft.*$", "\n", md, flags=re.S)

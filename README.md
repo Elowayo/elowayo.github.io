@@ -57,7 +57,7 @@ rebuilds them on every deploy, so a committed copy could only go stale.
 
 `tools/build.py` removes text that must not appear on a live page but stays in
 the markdown: HTML comments (the Korean drafts open with internal drafting
-notes in one), the "starting draft / not reviewed by a licensed attorney"
+notes in one), the Korean "초안 — 게시 전" draft notice, the "starting draft / not reviewed by a licensed attorney"
 footnote, and the aside in Terms §13 about BC arbitration language.
 
 ## Publishing a language
@@ -76,9 +76,9 @@ The Korean documents are drafts (their header says 게시 금지) until legal
 review and the vendor contacts are done (Elowa-0dm.9). To publish Korean
 after that:
 
-1. In the app repo, remove the draft notice from both `.ko.md` files (the
-   `> **초안 — 게시 전.** …` line; the leading `<!-- … -->` notes are stripped
-   automatically but may be removed too) and merge to `main`.
+1. Finish the review and merge the final `.ko.md` files to the app's `main`.
+   The draft notice (`> **초안 — 게시 전.** …`) and the leading `<!-- … -->`
+   notes are stripped by `tools/build.py`, so they never reach the site.
 2. Here, change `site.json` to `["en", "ko"]` and merge to `main`. The push
    deploys the site with `/ko/` pages and the switcher.
 
