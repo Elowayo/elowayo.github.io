@@ -119,20 +119,20 @@ HOME_EN = '''<div class="hero">
 
 HOME_KO = '''<div class="hero">
   <div class="wrap">
-    <p class="eyebrow">출시 예정</p>
-    <h1>피부가 좋아졌는지,<br> 느낌 말고 사진으로 확인하세요</h1>
-    <p class="lede">하루 1분이면 됩니다. 안내에 맞춰 세 방향을 찍으면 Elowa가 전후를 있는 그대로
-      비교해 줍니다. 사진은 휴대폰 밖으로 나가지 않습니다.</p>
+    <p class="eyebrow">피부 경과 기록</p>
+    <h1>내 피부 비포 애프터,<br> 한눈에 비교하세요</h1>
+    <p class="lede">하루 1분, 같은 각도로 세 장. 쌓인 사진을 나란히 놓고 달라진 점을 직접
+      확인하세요.</p>
     <div class="actions">
       <a class="btn btn-primary" href="mailto:hello.elowa@gmail.com?subject=Elowa">문의하기</a>
-      <a class="btn btn-outline" href="privacy.html">내 정보는 어떻게 처리되나요</a>
+      <a class="btn btn-outline" href="privacy.html">사진은 어디에 저장되나요?</a>
     </div>
   </div>
 </div>
 
 <section>
   <div class="wrap">
-    <h2 class="section-title">체크인은 이렇게 합니다</h2>
+    <h2 class="section-title">하루 1분, 세 장이면 끝</h2>
     <p class="section-intro">매일 같은 방식으로 같은 사진 세 장을 찍습니다. 조건이 같아야 비교할 의미가 생깁니다.</p>
     <div class="cards">
       <div class="card">
@@ -159,7 +159,7 @@ HOME_KO = '''<div class="hero">
 
 <section class="band">
   <div class="wrap">
-    <h2 class="section-title">내 얼굴은 내 것</h2>
+    <h2 class="section-title">사진은 내 폰에만</h2>
     <p class="section-intro">Elowa에서 개인정보 보호는 설정 항목이 아니라 처음부터 그렇게 만든 구조입니다.
       사진을 어디에도 보내지 않으니, 서버에 사진 사본이 있을 수 없습니다.</p>
     <div class="pledge">
@@ -237,8 +237,8 @@ LANGS = {
         "on_this_page": "목차",
         "updated": "최종 수정일 {}",
         "home": {
-            "title": "Elowa — 피부 변화를 사진으로 확인하세요",
-            "desc": "하루 1분 사진 체크인으로 피부 변화를 있는 그대로 보여 주는 앱, Elowa. 안내에 맞춰 세 방향을 찍고 전후를 비교합니다. 사진은 휴대폰에만 남습니다.",
+            "title": "Elowa — 피부 비포 애프터, 한눈에 비교하세요",
+            "desc": "하루 1분, 같은 각도로 세 장. 쌓인 사진으로 피부 비포 애프터를 한눈에 비교하는 앱, Elowa. 사진은 휴대폰에만 남습니다.",
             "body": HOME_KO,
         },
         "privacy": {
