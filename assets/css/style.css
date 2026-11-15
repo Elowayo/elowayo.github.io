@@ -482,5 +482,30 @@ section { padding: clamp(2.75rem, 7vw, 5rem) 0; }
 }
 .doc blockquote p { margin: 0; }
 
-/* Korean: break lines between words, not inside them. */
-:lang(ko) { word-break: keep-all; overflow-wrap: break-word; }
+/* ---------- Korean ---------- */
+
+/* Subset of Pretendard Variable (OFL), renamed; see assets/fonts/README.md. */
+@font-face {
+  font-family: "Elowa KR";
+  src: url("../fonts/ElowaKR-subset.woff2") format("woff2-variations"),
+       url("../fonts/ElowaKR-subset.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* One family for headings and body; headings go bold instead of serif.
+   The Latin wordmark keeps its serif. Lines break between words. */
+:lang(ko) {
+  --font-sans: "Elowa KR", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+    "Malgun Gothic", "Noto Sans KR", sans-serif;
+  --font-serif: var(--font-sans);
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+:lang(ko) .brand { font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif; }
+:lang(ko) .hero h1,
+:lang(ko) .section-title,
+:lang(ko) .doc-header h1,
+:lang(ko) .doc h2 { font-weight: 700; letter-spacing: -0.02em; }
+:lang(ko) .hero h1 { line-height: 1.25; }
