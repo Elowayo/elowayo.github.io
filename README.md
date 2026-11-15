@@ -24,8 +24,9 @@ content/                     legal markdown, copied in at build time (not commit
 | Terms of Service | `/terms.html` | `/ko/terms.html` |
 
 English stays at the root because shipped apps link there. Every page carries
-`<html lang>`, `hreflang` alternates, and an EN / 한국어 switcher that links to
-the same page in the other language. There is no automatic redirect by browser
+`<html lang>`, `hreflang` alternates, and a language dropdown (English /
+한국어) in the header that links to the same page in the other language. The
+dropdown is a `<details>` menu of plain links, so it works without JavaScript. There is no automatic redirect by browser
 language. The usage-measurement section has the id `5a-usage-measurement` in
 both languages (the app links `terms.html#5a-usage-measurement`); other
 heading ids come from the heading text.

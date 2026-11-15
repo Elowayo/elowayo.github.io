@@ -197,7 +197,6 @@ HOME_KO = '''<div class="hero">
 
 LANGS = {
     "en": {
-        "label": "EN",
         "name": "English",
         "skip": "Skip to content",
         "nav_label": "Primary",
@@ -228,7 +227,6 @@ LANGS = {
         },
     },
     "ko": {
-        "label": "한국어",
         "name": "한국어",
         "skip": "본문으로 건너뛰기",
         "nav_label": "주 메뉴",
@@ -288,17 +286,34 @@ def head_alternates(page, langs):
 def switcher(lang, page, langs):
     if len(langs) < 2:
         return ""
+    # A <details> dropdown: plain links, so it works without JavaScript.
     up = "../" if lang != DEFAULT_LANG else ""
     items = []
     for l in langs:
-        t = LANGS[l]
+        name = LANGS[l]["name"]
         if l == lang:
-            items.append(f'<span aria-current="true" lang="{l}">{t["label"]}</span>')
+            items.append(f'<li><a href="{page}" aria-current="true" lang="{l}">{name}</a></li>')
         else:
-            items.append(f'<a href="{up}{dir_of(l)}{page}" hreflang="{l}" lang="{l}">{t["label"]}</a>')
-    sep = '<span class="sep" aria-hidden="true">/</span>'
-    return (f'\n    <nav class="lang-switch" aria-label="{LANGS[lang]["switch_label"]}">'
-            + sep.join(items) + '</nav>')
+            items.append(f'<li><a href="{up}{dir_of(l)}{page}" hreflang="{l}" lang="{l}">{name}</a></li>')
+    label = LANGS[lang]["switch_label"]
+    return f'''
+    <nav class="lang-switch" aria-label="{label}">
+      <details class="lang-menu" id="lang-menu">
+        <summary><span class="sr-only">{label}: </span>{LANGS[lang]["name"]}</summary>
+        <ul>
+          {"".join(items)}
+        </ul>
+      </details>
+    </nav>
+    <script>
+      (function () {{
+        var m = document.getElementById("lang-menu");
+        document.addEventListener("click", function (e) {{ if (!m.contains(e.target)) m.open = false; }});
+        document.addEventListener("keydown", function (e) {{
+          if (e.key === "Escape" && m.open) {{ m.open = false; m.querySelector("summary").focus(); }}
+        }});
+      }})();
+    </script>'''
 
 
 def shell(lang, langs, page, title, desc, body):
