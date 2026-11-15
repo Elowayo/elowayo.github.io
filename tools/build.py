@@ -120,7 +120,7 @@ HOME_EN = '''<div class="hero">
 HOME_KO = '''<div class="hero">
   <div class="wrap">
     <p class="eyebrow">피부 경과 기록</p>
-    <h1>내 피부 비포 애프터,<br> 한눈에 비교하세요</h1>
+    <h1>내 피부 비포 애프터를<br> 한눈에!</h1>
     <p class="lede">하루 1분, 같은 각도로 세 장. 어제와 오늘, 한 달 전과 지금을 한눈에
       비교해 보세요.</p>
     <div class="actions">
@@ -237,7 +237,7 @@ LANGS = {
         "on_this_page": "목차",
         "updated": "최종 수정일 {}",
         "home": {
-            "title": "Elowa — 피부 비포 애프터, 한눈에 비교하세요",
+            "title": "Elowa — 내 피부 비포 애프터를 한눈에",
             "desc": "하루 1분, 같은 각도로 세 장. 어제와 오늘, 한 달 전과 지금을 한눈에 비교해 보세요. 사진은 휴대폰에만 남습니다.",
             "body": HOME_KO,
         },
