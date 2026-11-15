@@ -121,8 +121,8 @@ HOME_KO = '''<div class="hero">
   <div class="wrap">
     <p class="eyebrow">피부 경과 기록</p>
     <h1>내 피부 비포 애프터,<br> 한눈에 비교하세요</h1>
-    <p class="lede">하루 1분, 같은 각도로 세 장. 쌓인 사진을 나란히 놓고 달라진 점을 직접
-      확인하세요.</p>
+    <p class="lede">하루 1분, 같은 각도로 세 장만 찍으세요. 한 달 전 피부와 오늘 피부를
+      나란히 볼 수 있습니다.</p>
     <div class="actions">
       <a class="btn btn-primary" href="mailto:hello.elowa@gmail.com?subject=Elowa">문의하기</a>
       <a class="btn btn-outline" href="privacy.html">사진은 어디에 저장되나요?</a>
@@ -238,7 +238,7 @@ LANGS = {
         "updated": "최종 수정일 {}",
         "home": {
             "title": "Elowa — 피부 비포 애프터, 한눈에 비교하세요",
-            "desc": "하루 1분, 같은 각도로 세 장. 쌓인 사진으로 피부 비포 애프터를 한눈에 비교하는 앱, Elowa. 사진은 휴대폰에만 남습니다.",
+            "desc": "하루 1분, 같은 각도로 세 장만 찍으면 한 달 전 피부와 오늘 피부를 나란히 볼 수 있습니다. 사진은 휴대폰에만 남습니다.",
             "body": HOME_KO,
         },
         "privacy": {
