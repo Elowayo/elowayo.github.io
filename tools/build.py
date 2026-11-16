@@ -43,7 +43,6 @@ HOME_EN = '''<div class="hero">
     <p class="lede">A one-minute daily check-in lets you compare yesterday with today, and last
       month with now.</p>
     <div class="actions">
-      <a class="btn btn-primary" href="mailto:hello.elowa@gmail.com?subject=Elowa">Get in touch</a>
       <a class="btn btn-outline" href="privacy.html">Where are my photos stored?</a>
     </div>
   </div>
@@ -124,7 +123,6 @@ HOME_KO = '''<div class="hero">
     <p class="lede">하루 1분의 체크인으로 어제와 오늘, 한 달 전과 지금을 한눈에
       비교해 보세요.</p>
     <div class="actions">
-      <a class="btn btn-primary" href="mailto:hello.elowa@gmail.com?subject=Elowa">문의하기</a>
       <a class="btn btn-outline" href="privacy.html">사진은 어디에 저장되나요?</a>
     </div>
   </div>
