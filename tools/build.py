@@ -70,9 +70,9 @@ HOME_EN = '''<div class="hero">
       </div>
       <div class="card">
         <span class="step">3</span>
-        <h3>Compare honestly</h3>
-        <p>Wipe between any two days, or view them side by side. When a comparison may be unreliable,
-          Elowa says so instead of quietly showing you a flattering one.</p>
+        <h3>Spot the change</h3>
+        <p>Wipe between any two days, or view them side by side. Photos taken in similar light and at a
+          similar angle are marked Comparable, so changes over time are easy to see.</p>
       </div>
     </div>
   </div>
@@ -133,7 +133,7 @@ HOME_KO = '''<div class="hero">
 <section>
   <div class="wrap">
     <h2 class="section-title">하루 1분, 세 장이면 끝</h2>
-    <p class="section-intro">매일 같은 방식으로 같은 사진 세 장을 찍습니다. 조건이 같아야 비교할 의미가 생깁니다.</p>
+    <p class="section-intro">어렵지 않습니다. 화면 안내만 따라 찍으면 매일 같은 구도로 맞춰져, 작은 변화까지 비교할 수 있습니다.</p>
     <div class="cards">
       <div class="card">
         <span class="step">1</span>
@@ -149,9 +149,9 @@ HOME_KO = '''<div class="hero">
       </div>
       <div class="card">
         <span class="step">3</span>
-        <h3>있는 그대로 비교</h3>
-        <p>두 날짜를 밀어서 넘겨 보거나 나란히 놓고 봅니다. 비교 결과를 믿기 어려울 때는 그럴듯한
-          사진을 슬쩍 보여 주는 대신 그렇다고 알려 줍니다.</p>
+        <h3>달라진 점 찾기</h3>
+        <p>두 날짜를 밀어서 넘겨 보거나 나란히 놓고 보세요. 조명과 각도가 비슷한 사진에는 '비교 가능'
+          표시가 붙어서, 시간에 따른 변화를 쉽게 알아볼 수 있습니다.</p>
       </div>
     </div>
   </div>
@@ -160,28 +160,27 @@ HOME_KO = '''<div class="hero">
 <section class="band">
   <div class="wrap">
     <h2 class="section-title">사진은 내 폰에만</h2>
-    <p class="section-intro">Elowa에서 개인정보 보호는 설정 항목이 아니라 처음부터 그렇게 만든 구조입니다.
-      사진을 어디에도 보내지 않으니, 서버에 사진 사본이 있을 수 없습니다.</p>
+    <p class="section-intro">안심하세요. Elowa는 사진을 서버에 올리지 않습니다. 개인정보 보호는 따로
+      켜는 기능이 아니라 Elowa의 기본입니다.</p>
     <div class="pledge">
       <div>
         <h3>사진은 내 기기에만</h3>
-        <p>체크인 사진과 메모는 휴대폰 안 앱 전용 저장 공간에 저장됩니다. 당사는 이를 받지도, 보지도,
-          보관하지도 않습니다.</p>
+        <p>체크인 사진과 메모는 내 휴대폰에만 저장되며, Elowa로 전송되지 않습니다.</p>
       </div>
       <div>
         <h3>처리는 휴대폰 안에서</h3>
-        <p>조명·각도 확인과 선택 기능인 위치 맞추기 도움은 모두 기기 안에서 실행되며, 그 결과는 어디에도
-          전송되지 않습니다.</p>
+        <p>조명·각도 확인과 위치 맞추기 도움은 모두 기기 안에서 처리되며, 결과는 어디에도 전송되지
+          않습니다.</p>
       </div>
       <div>
-        <h3>당사가 가진 것은 계정 정보뿐</h3>
-        <p>이름, 이메일, 동의 기록만 보관합니다. 사진도, 메모도, 직접 고른 피부 고민도 아닙니다. 그런
-          정보는 휴대폰에 남습니다.</p>
+        <h3>계정 정보와 동의 내역만 보관</h3>
+        <p>이름, 이메일, 약관 동의 내역만 보관합니다. 사진, 메모, 피부 고민은 휴대폰에만 남습니다.</p>
       </div>
       <div>
         <h3>사용 데이터 수집은 직접 켤 때만</h3>
-        <p>켜지 않으면 꺼져 있습니다. 수집하는 것은 제한된 기술·사용 데이터이며 사진, 메모, 피부 고민은
-          건드리지 않습니다. 켜든 끄든 앱은 똑같이 작동합니다.</p>
+        <p>기본으로 꺼져 있고, 원할 때만 켤 수 있습니다. 켜면 앱 개선에 필요한 최소한의 사용 데이터만
+          모으며, 사진·메모·피부 고민은 수집하지 않습니다. 켜지 않아도 모든 기능을 그대로 쓸 수
+          있습니다.</p>
       </div>
     </div>
   </div>
