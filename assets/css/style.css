@@ -106,7 +106,7 @@ a:hover { text-decoration-thickness: 2px; }
   text-decoration: none;
   font-weight: 600;
 }
-.brand svg { width: 28px; height: 28px; color: var(--primary); flex: none; }
+.brand svg { width: 28px; height: 28px; flex: none; }
 
 .site-nav {
   display: flex;
