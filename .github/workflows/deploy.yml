@@ -1,0 +1,75 @@
+name: Deploy site
+
+# Builds the site from the legal markdown on Elowayo/Elowa main and deploys it
+# to GitHub Pages. Runs on pushes here, by hand, and when the app repo sends
+# a `legal-docs-updated` repository_dispatch after the documents change.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  repository_dispatch:
+    types: [legal-docs-updated]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deployment at a time; a newer run replaces a queued one, but an
+# in-progress deployment is allowed to finish.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out site
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+
+      - name: Check out legal documents from the app repo
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        with:
+          repository: Elowayo/Elowa
+          ref: main
+          token: ${{ secrets.APP_REPO_TOKEN }}
+          path: app
+          persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /Terms of Service.md
+            /Privacy Policy.md
+            /Terms of Service.ko.md
+            /Privacy Policy.ko.md
+
+      - name: Copy documents into content/
+        run: |
+          set -euo pipefail
+          mkdir -p content
+          cp "app/Terms of Service.md" content/terms-of-service.md
+          cp "app/Privacy Policy.md"   content/privacy-policy.md
+          # Korean drafts may not exist on main yet. build.py fails only if a
+          # language listed in site.json is missing its documents.
+          if [ -f "app/Terms of Service.ko.md" ]; then cp "app/Terms of Service.ko.md" content/terms-of-service.ko.md; fi
+          if [ -f "app/Privacy Policy.ko.md" ];   then cp "app/Privacy Policy.ko.md"   content/privacy-policy.ko.md; fi
+          echo "App repo commit: $(git -C app rev-parse HEAD)" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Build
+        run: python3 tools/build.py
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4.0.0
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4.0.5

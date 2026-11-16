@@ -407,3 +407,105 @@ section { padding: clamp(2.75rem, 7vw, 5rem) 0; }
   .brand { font-size: 1.2rem; }
   .actions .btn { width: 100%; }
 }
+
+/* ---------- language switcher ---------- */
+
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+}
+.lang-menu { position: relative; font-size: 0.9rem; }
+.lang-menu summary {
+  list-style: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.75rem;
+  border: 1px solid var(--outline-variant);
+  border-radius: 999px;
+  color: var(--on-surface-variant);
+  background: var(--surface);
+}
+.lang-menu summary::-webkit-details-marker { display: none; }
+.lang-menu summary::after {
+  content: "";
+  width: 0.4rem; height: 0.4rem;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: translateY(-2px) rotate(45deg);
+}
+.lang-menu[open] summary::after { transform: translateY(1px) rotate(-135deg); }
+.lang-menu summary:hover { color: var(--primary); border-color: var(--outline); }
+.lang-menu ul {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 0.4rem);
+  z-index: 10;
+  min-width: 8.5rem;
+  margin: 0;
+  padding: 0.35rem;
+  list-style: none;
+  background: var(--surface);
+  border: 1px solid var(--outline-variant);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(51, 6, 43, 0.12);
+}
+.lang-menu li a {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  color: var(--on-surface-variant);
+  text-decoration: none;
+}
+.lang-menu li a:hover { background: var(--surface-container-low); color: var(--primary); }
+.lang-menu li a[aria-current] { color: var(--on-primary-container); font-weight: 600; }
+
+/* ---------- tables and quotes in documents ---------- */
+
+.doc .table-wrap { overflow-x: auto; margin: 0 0 1.15rem; }
+.doc table { border-collapse: collapse; width: 100%; font-size: 0.92rem; }
+.doc th, .doc td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.55rem 0.7rem;
+  border-bottom: 1px solid var(--outline-variant);
+}
+.doc th { color: var(--on-surface); font-weight: 600; background: var(--surface-container-low); }
+.doc blockquote {
+  margin: 0 0 1.5rem;
+  padding: 0.9rem 1.1rem;
+  border-left: 3px solid var(--primary);
+  background: var(--secondary-container);
+  color: var(--on-secondary-container);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+.doc blockquote p { margin: 0; }
+
+/* ---------- Korean ---------- */
+
+/* Subset of Pretendard Variable (OFL), renamed; see assets/fonts/README.md. */
+@font-face {
+  font-family: "Elowa KR";
+  src: url("../fonts/ElowaKR-subset.woff2") format("woff2-variations"),
+       url("../fonts/ElowaKR-subset.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* One family for headings and body; headings go bold instead of serif.
+   The Latin wordmark keeps its serif. Lines break between words. */
+:lang(ko) {
+  --font-sans: "Elowa KR", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+    "Malgun Gothic", "Noto Sans KR", sans-serif;
+  --font-serif: var(--font-sans);
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+:lang(ko) .brand { font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif; }
+:lang(ko) .hero h1,
+:lang(ko) .section-title,
+:lang(ko) .doc-header h1,
+:lang(ko) .doc h2 { font-weight: 700; letter-spacing: -0.02em; }
+:lang(ko) .hero h1 { line-height: 1.25; }
