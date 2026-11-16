@@ -5,7 +5,8 @@ def inline(t):
     t = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', t)
     t = re.sub(r'(?<![\w*])\*([^*]+?)\*(?![\w*])', r'<em>\1</em>', t)
     t = re.sub(r'\[(.+?)\]\((.+?)\)', r'<a href="\2">\1</a>', t)
-    t = re.sub(r'([\w.\-]+@[\w.\-]+\.\w+)', r'<a href="mailto:\1">\1</a>', t)
+    # ASCII only: \w also matches Hangul, which pulled particles like 으로 into the link.
+    t = re.sub(r'([A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,})', r'<a href="mailto:\1">\1</a>', t)
     return t
 
 def slug(s):
