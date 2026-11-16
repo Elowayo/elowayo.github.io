@@ -55,6 +55,9 @@ jobs:
           if [ -f "app/Privacy Policy.ko.md" ];   then cp "app/Privacy Policy.ko.md"   content/privacy-policy.ko.md; fi
           echo "App repo commit: $(git -C app rev-parse HEAD)" >> "$GITHUB_STEP_SUMMARY"
 
+      - name: Test
+        run: python3 -m unittest discover -s tools
+
       - name: Build
         run: python3 tools/build.py
 
