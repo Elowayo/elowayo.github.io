@@ -69,9 +69,9 @@ HOME_EN = '''<div class="hero">
       </div>
       <div class="card">
         <span class="step">3</span>
-        <h3>Spot the change</h3>
-        <p>Wipe between any two days, or view them side by side. Photos taken in similar light and at a
-          similar angle are marked Comparable, so changes over time are easy to see.</p>
+        <h3>Spot what changed</h3>
+        <p>See what the mirror misses. Pick any two days and slide between them, or set them side by
+          side — even small differences jump out.</p>
       </div>
     </div>
   </div>
@@ -147,9 +147,9 @@ HOME_KO = '''<div class="hero">
       </div>
       <div class="card">
         <span class="step">3</span>
-        <h3>달라진 점 찾기</h3>
-        <p>두 날짜를 밀어서 넘겨 보거나 나란히 놓고 보세요. 조명과 각도가 비슷한 사진에는 '비교 가능'
-          표시가 붙어서, 시간에 따른 변화를 쉽게 알아볼 수 있습니다.</p>
+        <h3>달라진 점 발견하기</h3>
+        <p>거울로는 몰랐던 변화, 사진으로 확인하세요. 원하는 두 날을 골라 슬라이더로 넘겨 보거나 나란히
+          놓고 보면, 작은 차이도 바로 눈에 들어옵니다.</p>
       </div>
     </div>
   </div>
