@@ -38,22 +38,21 @@ MARK = ('<svg viewBox="0 0 96 96" fill="none" aria-hidden="true" focusable="fals
 
 HOME_EN = '''<div class="hero">
   <div class="wrap">
-    <p class="eyebrow">Coming soon</p>
-    <h1>Is my skin actually improving?</h1>
-    <p class="lede">Elowa answers that with a one-minute daily photo check-in — three guided poses,
-      an honest before-and-after comparison, and photos that stay on your phone.</p>
+    <p class="eyebrow">Skin progress journal</p>
+    <h1>Your skin's before&nbsp;and&nbsp;after, at&nbsp;a&nbsp;glance</h1>
+    <p class="lede">A one-minute daily check-in lets you compare yesterday with today, and last
+      month with now.</p>
     <div class="actions">
-      <a class="btn btn-primary" href="mailto:hello.elowa@gmail.com?subject=Elowa">Get in touch</a>
-      <a class="btn btn-outline" href="privacy.html">How your data is handled</a>
+      <a class="btn btn-outline" href="privacy.html">Where are my photos stored?</a>
     </div>
   </div>
 </div>
 
 <section>
   <div class="wrap">
-    <h2 class="section-title">How a check-in works</h2>
-    <p class="section-intro">The same three photos, taken the same way, every day. Consistency is what makes
-      a comparison worth looking at.</p>
+    <h2 class="section-title">One minute, three photos, done</h2>
+    <p class="section-intro">It's easy. Follow the on-screen guides and every photo lines up the same
+      way, so you can compare even small changes.</p>
     <div class="cards">
       <div class="card">
         <span class="step">1</span>
@@ -70,9 +69,9 @@ HOME_EN = '''<div class="hero">
       </div>
       <div class="card">
         <span class="step">3</span>
-        <h3>Spot the change</h3>
-        <p>Wipe between any two days, or view them side by side. Photos taken in similar light and at a
-          similar angle are marked Comparable, so changes over time are easy to see.</p>
+        <h3>Spot what changed</h3>
+        <p>See what the mirror misses. Pick any two days and slide between them, or set them side by
+          side — even small differences jump out.</p>
       </div>
     </div>
   </div>
@@ -80,14 +79,13 @@ HOME_EN = '''<div class="hero">
 
 <section class="band">
   <div class="wrap">
-    <h2 class="section-title">Your face is yours</h2>
-    <p class="section-intro">Privacy isn't a setting in Elowa — it's the architecture. There is no
-      server-side copy of your photos, because they are never sent anywhere.</p>
+    <h2 class="section-title">Your photos stay on your phone</h2>
+    <p class="section-intro">Rest easy: Elowa never uploads your photos. Privacy isn't something you
+      switch on — it's how Elowa works.</p>
     <div class="pledge">
       <div>
         <h3>Photos stay on your device</h3>
-        <p>Check-in photos and notes are stored in the app's own storage on your phone. We never
-          receive, view, or store them.</p>
+        <p>Check-in photos and notes are saved only on your phone and never sent to Elowa.</p>
       </div>
       <div>
         <h3>Processing happens on your phone</h3>
@@ -95,14 +93,15 @@ HOME_EN = '''<div class="hero">
           from them is transmitted.</p>
       </div>
       <div>
-        <h3>We hold only your account</h3>
-        <p>Your name, email, and your consent record. Not your photos, not your notes, not even the
-          concerns you pick — those stay on your phone.</p>
+        <h3>Only your account and consent record</h3>
+        <p>Your name, email, and the record of the terms you agreed to. Photos, notes, and skin
+          concerns stay on your phone.</p>
       </div>
       <div>
         <h3>Measurement you opt into</h3>
-        <p>Off unless you turn it on. Limited technical and usage data, never touching your photos,
-          notes, or concerns — and the app works identically either way.</p>
+        <p>Off by default; turn it on only if you want to. When it's on, we collect only the minimal
+          usage data needed to improve the app — never your photos, notes, or skin concerns. Every
+          feature works the same with it off.</p>
       </div>
     </div>
   </div>
@@ -124,7 +123,6 @@ HOME_KO = '''<div class="hero">
     <p class="lede">하루 1분의 체크인으로 어제와 오늘, 한 달 전과 지금을 한눈에
       비교해 보세요.</p>
     <div class="actions">
-      <a class="btn btn-primary" href="mailto:hello.elowa@gmail.com?subject=Elowa">문의하기</a>
       <a class="btn btn-outline" href="privacy.html">사진은 어디에 저장되나요?</a>
     </div>
   </div>
@@ -149,9 +147,9 @@ HOME_KO = '''<div class="hero">
       </div>
       <div class="card">
         <span class="step">3</span>
-        <h3>달라진 점 찾기</h3>
-        <p>두 날짜를 밀어서 넘겨 보거나 나란히 놓고 보세요. 조명과 각도가 비슷한 사진에는 '비교 가능'
-          표시가 붙어서, 시간에 따른 변화를 쉽게 알아볼 수 있습니다.</p>
+        <h3>달라진 점 발견하기</h3>
+        <p>거울로는 몰랐던 변화, 사진으로 확인하세요. 원하는 두 날을 골라 슬라이더로 넘겨 보거나 나란히
+          놓고 보면, 작은 차이도 바로 눈에 들어옵니다.</p>
       </div>
     </div>
   </div>
@@ -206,8 +204,8 @@ LANGS = {
         "on_this_page": "On this page",
         "updated": "Last updated {}",
         "home": {
-            "title": "Elowa — see whether your skin is actually changing",
-            "desc": "Elowa is a one-minute daily photo check-in that shows whether your skin is actually changing. Three guided poses, honest comparison, photos that never leave your phone.",
+            "title": "Elowa — your skin's before and after, at a glance",
+            "desc": "A one-minute daily check-in to compare yesterday with today, and last month with now. Your photos stay on your phone.",
             "body": HOME_EN,
         },
         "privacy": {
